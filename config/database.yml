@@ -51,10 +51,11 @@ test:
   username: ian
   password:
 
-#production:
-  #adapter: postgresql
-  #encoding: unicode
-  #database: omglol_production
-  #pool: 5
-  #username: ian
-  #password: omghai12 # yes i realize this is here. this is a dummy app.
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: omglol_production
+  pool: 5
+  username: 
+  password: 
+  host: 127.0.0.1
