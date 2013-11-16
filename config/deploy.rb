@@ -1,6 +1,9 @@
 set :application, 'omglol'
 set :repo_url, 'git@github.com:montague/omglol'
 
+# cf. https://github.com/capistrano/capistrano/issues/639#issuecomment-27651608
+SSHKit.config.command_map[:rake] = "bundle exec rake"
+
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
  set :deploy_to, '/var/www/omglol'
