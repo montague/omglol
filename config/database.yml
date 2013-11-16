@@ -19,7 +19,7 @@ development:
   encoding: unicode
   database: omglol_development
   pool: 5
-  username: omglol
+  username: ian
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -48,7 +48,7 @@ test:
   encoding: unicode
   database: omglol_test
   pool: 5
-  username: omglol
+  username: ian
   password:
 
 production:
@@ -56,5 +56,5 @@ production:
   encoding: unicode
   database: omglol_production
   pool: 5
-  username: omglol
-  password:
+  username: ian
+  password: omghai12 # yes i realize this is here. this is a dummy app.
