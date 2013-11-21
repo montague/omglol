@@ -61,9 +61,9 @@ namespace :deploy do
       sudo "mv /tmp/#{application} #{nginx_conf_dir}"
       execute "chmod +x #{nginx_conf_dir}/#{application}"
       sudo "ln -s #{nginx_conf_dir}/#{application} /etc/nginx/sites-enabled"
-      sudo "service nginx restart"
       sudo "mkdir -p #{deploy_to}/shared/{config,bundle,log}"
       sudo "chown -R deploy #{deploy_to}"
+      sudo "service nginx restart"
     end
   end
 end
