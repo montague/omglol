@@ -16,7 +16,7 @@ set :stage, :production
 # something that quacks like a hash can be used to set
 # extended properties on the server.
 server ENV['LINODE'],
-  user: 'deploy', 
+  user: 'deploy',
   roles: %w{web app db}
 
 # you can set custom ssh options

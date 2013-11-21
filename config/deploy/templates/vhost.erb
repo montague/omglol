@@ -1,0 +1,14 @@
+server {
+  listen 80 default_server;
+  server_name <%= fetch(:application) %>.local;
+
+  root <%= fetch(:deploy_to) %>/current/public;
+
+  access_log <%= fetch(:deploy_to) %>/shared/log/nginx-access.log;
+  error_log  <%= fetch(:deploy_to) %>/shared/log/nginx-error.log;
+
+  passenger_enabled on;
+  passenger_user    www-data;
+  passenger_group   www-data;
+  rack_env          production;
+}
